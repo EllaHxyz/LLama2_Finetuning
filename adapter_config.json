@@ -1,0 +1,26 @@
+{
+  "auto_mapping": null,
+  "base_model_name_or_path": "NousResearch/Llama-2-7b-chat-hf",
+  "bias": "none",
+  "fan_in_fan_out": false,
+  "inference_mode": true,
+  "init_lora_weights": true,
+  "layers_pattern": null,
+  "layers_to_transform": null,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "modules_to_save": null,
+  "peft_type": "LORA",
+  "r": 2,
+  "revision": null,
+  "target_modules": [
+    "model.layers.31.self_attn.q_proj",
+    "model.layers.31.self_attn.k_proj",
+    "model.layers.31.self_attn.v_proj",
+    "model.layers.31.self_attn.o_proj",
+    "model.layers.31.mlp.gate_proj",
+    "model.layers.31.mlp.up_proj",
+    "model.layers.31.mlp.down_proj"
+  ],
+  "task_type": "CAUSAL_LM"
+}
